@@ -1,0 +1,62 @@
+.button {
+    width: 160px;
+    height: 45px;
+    background-color: #ec644b;
+    font-size: 12px;
+    font-weight: 400;
+    // line-height: 22.04px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 22px;
+    cursor: pointer;
+    border: none;
+
+    &_order {
+        display: block;
+        margin: 39px auto 0 auto;
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17.35px;
+    }
+
+    &_details {
+        margin-top: 25px;
+    }
+
+    &_submit {
+        position: absolute;
+        top: 135%;
+        -webkit-transform: translateX(15px);
+        transform: translateX(325px);
+        &::before {
+            content: '';
+            position: absolute;
+            right: 100%;
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: white; 
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            display: block;
+            top: 12px;
+            width: 10px;
+            height: 10px;
+            background-color: white;   
+        } 
+    }
+
+    &_send {
+        position: absolute;
+        width: 180px;
+        top: 227px;
+        right: 50%;
+        transform: translateX(50%);
+
+    }
+}

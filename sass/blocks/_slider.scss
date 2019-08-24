@@ -1,0 +1,80 @@
+.slider {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    
+
+    &_title {
+        height: 19px;
+        color: #2e2e2e;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &_subtitle {
+        color: #2e2e2e;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 17px auto 0 auto;
+        text-align: center;
+
+    }
+
+    &_block {
+        margin-top: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_item {
+            display: flex;
+            position: relative;
+            z-index: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 114px;
+                height: 114px;
+                margin: 0 auto;
+            }
+
+            &_name {
+                color: #3a3a3a;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            &_feedback {
+                color: #3a3a3a;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22.01px;
+                text-align: center;
+                width: 601px;
+                margin: 0 auto;
+            }
+
+        }
+    }
+    .slick-prev {
+        border: none;
+        background-color: white;
+        position: absolute;
+        z-index: 1;
+        top: 18%;
+        right: 61%;
+    }
+    .slick-next {
+        border: none;
+        background-color: white;
+        position: absolute;
+        top: 18%;
+        right: 37%;
+    }
+}

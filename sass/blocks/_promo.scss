@@ -1,0 +1,115 @@
+header {
+    height: 680px;
+    background: url('/images/main_bg.jpg') center (center/cover) no-repeat;
+    padding: 23px 0 82px 0;
+
+    nav {
+        display: flex;
+
+        
+
+        ul {
+            display: flex;
+            margin-left: 55px;
+            list-style-type: none;
+            align-items: center;
+            padding: 0;
+
+            li {
+                margin-right: 20px;
+                a {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 16.71px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:hover {
+                        color: $second-color;
+                        text-decoration: underline;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            
+
+        }
+
+        
+    }
+
+    .overhead {
+        height: 23px;
+        color: $main-color;
+        text-align: center;
+        font-size: 24px;
+        line-height: 19px;
+        font-weight: 300;
+    }
+    .title {
+        margin-top: 26px;
+        color: $second-color;
+        font-size: 72px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 72px;
+    }
+    .subtitle {
+        margin-top: 10px;
+        text-align: center;
+        line-height: 37px;
+        font-size: 42px;
+        color: $main-color;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .dividing-block {
+        display: flex;
+        margin-top: 38px;
+        align-items: center;
+        justify-content: center;
+
+        &_line {
+            width: 390px;
+            height: 1px;
+            background-color: $main-color;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+
+        }
+        &_round {
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: $main-color;
+            margin-right: 10px;
+        }
+
+    }
+
+    .item-list {
+        margin-top: 27px;
+        &_item-promo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 48px;
+            }
+            h2 {
+                margin-top: 13px;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                line-height: 22px;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.call_block {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    margin-top: -20px;
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 19px;
+
+        h2 {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 14px;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 14px;
+            text-decoration: none;
+
+            &:hover {
+                color: $second-color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_footer {
+        margin-left: 248px;
+
+        .phone {
+            h2 {
+                line-height: 31px;
+            }
+        }
+    }
+}
