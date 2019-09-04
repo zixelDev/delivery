@@ -25,6 +25,8 @@
         margin-top: 32px;
         border: 1px solid #e9e9e9;
         height: 355px;
+        transition: all 300ms linear 0ms;
+        overflow: hidden;
 
         &_title {
             width: 100%;
@@ -44,45 +46,87 @@
 
             }
         }
-        &_content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 0 25px 0;
 
-            img {
-                width: 25%;
-                height: 54px;
+        &_block {
+            display: flex;
+            width: 200%;
+
+            &_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: 0.5s all;
+                transform: translateX(-100%);
+                padding: 14px 0 25px 0;
+                width: 50%;
+
+                img {
+                    width: 25%;
+                    height: 54px;
+                }
+
+                &_time {
+                    color: #2e2e2e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin: 12px auto 0 auto;
+                    text-align: center;
+                }
+
+                &_weight {
+                    text-transform: uppercase;
+                    margin: 5px auto 0 auto;
+                    color: #ec644b;
+                    font-size: 28px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+
+                &_descr {
+                    margin: 20px auto 0 auto;
+                    color: #2e2e2e;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    text-align: center;
+                }
             }
-            &_time {
-                color: #2e2e2e;
-                font-size: 14px;
-                font-weight: 400;
-                text-transform: uppercase;
-                margin: 12px auto 0 auto;
-                text-align: center;
+
+            &_details {
+                display: block;
+                width: 50%;
+                padding: 14px 0 25px 0;
+                transition: 0.5s all;
+
+                p {
+                    color: #2e2e2e;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    text-align: center;
+                }
             }
-            &_weight {
-                text-transform: uppercase;
-                margin: 5px auto 0 auto;
-                color: #ec644b;
-                font-size: 28px;
-                line-height: 30px;
-                text-align: center;
+            .active-content {
+                transform: translateX(0);
             }
-            &_descr {
-                margin: 20px auto 0 auto;
-                color: #2e2e2e;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 20px;
-                text-align: center;
+            .active-details {
+                transform: translateX(-100%);
             }
         }
+
+        &:hover {
+            transform: rotate(0deg) scale(1.1, 1.1);
+            box-shadow: 5px 5px 0px #A5A5A5;
+            z-index: 999;
+            transition: transform 300ms linear 0ms,
+                box-shadow 300ms linear 0ms, z-index 300ms linear 0ms;
+        }
     }
+
     &_footer {
-        
+
         color: #3a3a3a;
         font-size: 28px;
         font-weight: 400;
@@ -90,12 +134,14 @@
         margin: 56px auto 0 auto;
         text-align: center;
     }
+
     &_rectangle {
         position: relative;
         margin-top: 71px;
         border: 1px #898989 solid;
         width: 100%;
         height: 166px;
+
         &_round {
             position: relative;
             width: 102px;
@@ -108,7 +154,8 @@
             justify-content: center;
             position: absolute;
             right: 50%;
-            transform: translate(50%,-50%);
+            transform: translate(50%, -50%);
+
             &::before {
                 content: '';
                 position: absolute;
@@ -116,8 +163,9 @@
                 display: block;
                 width: 10px;
                 height: 10px;
-                background-color: white; 
+                background-color: white;
             }
+
             &::after {
                 content: '';
                 position: absolute;
@@ -125,8 +173,8 @@
                 display: block;
                 width: 10px;
                 height: 10px;
-                background-color: white;   
-            }       
+                background-color: white;
+            }
 
         }
 
@@ -136,6 +184,7 @@
             top: 50%;
             right: 50%;
             transform: translateX(50%);
+
             input {
                 display: block;
                 width: 268px;
@@ -147,10 +196,10 @@
                 text-align: center;
             }
         }
-         
-           
+
+
     }
-    
+
 
 
 }

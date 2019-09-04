@@ -14,13 +14,21 @@
 @import 'blocks/buttons';
 @import 'blocks/call';
 @import 'blocks/person-form';
-@import 'lib/slick';
+
+@import 'lib/animate';
 @import 'lib/bootstrap-grid.min';
+
+//settings resolution
+
+@import 'base/_media.sass';
 
 
 
 
 * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     font-family: 'Roboto',   sans-serif;  
 }
 

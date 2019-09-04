@@ -1,0 +1,367 @@
+@media (max-width: 1500px)
+	.fog
+		display: none
+
+@media (max-width: 1199px)
+	header
+		nav
+			.call_block
+				flex-direction: column-reverse
+				.phone
+					a
+						font-size: 16px
+		.overhead
+			line-height: 30px
+		.title
+			font-size: 61px
+		.subtitle
+			font-size: 35px
+	.button_order
+		margin-top: 0
+		width: 210px
+	.button_details
+    	margin-left: 12%
+	.about
+		.row
+			justify-content: center
+		.no_mr
+			margin: 30px auto 0 auto
+	.questions
+		&_main
+			width: 100%
+			form
+				input
+					    width: 204px
+
+	footer
+		.top
+			h2
+				font-size: 15px
+			.phone
+				width: 142px
+				a
+					font-size: 16px
+		.bottom
+			justify-content: center
+			a
+				margin-left: 197px
+			&_text
+				margin: 0 10px 0 262px
+
+@media (max-width: 991px)
+	.button
+		&_order
+			margin-top: 30px
+		&_details
+			margin-left: 22%
+		&_submit
+			transform: translateX(247px)
+			&::after
+				top: 13px
+		&_send
+			top: 346px
+	header
+		padding-bottom: 50px
+		nav
+			ul
+				li
+					a
+						font-size: 14px
+			flex-wrap: wrap
+			.call_block
+				flex-direction: row
+				margin: 0 0 10px 54%
+		.title
+			font-size: 50px
+		.subtitle
+			font-size: 30px
+		.item-list
+			&_item-promo
+				h2
+					font-size: 14px
+	.advantages
+		padding-top: 26px
+		.row
+			margin-top: 40px
+		&_item
+			&_text
+				&_title
+					font-size: 14px
+	.prices
+		.row
+			justify-content: center	
+		&_item
+			&_block
+				&_content
+					&_descr
+						font-size: 15px
+		.form
+			input
+				width: 214px
+	.questions
+		&_main
+			min-height: 406px
+			form
+				justify-content: center
+				input
+					width: 70%
+					margin-bottom: 10px
+
+	footer
+		.call_block
+			&_footer
+				margin-left: 0
+		.bottom
+			a
+				text-align: center
+			&_text
+				margin: 0 10px 0 191px
+
+@media (max-width: 767px)
+	.button
+		&_submit
+			top: 252px
+			transform: translateX(53px)
+
+	header
+		nav
+			ul
+				padding: 20px 15px
+				width: 100%
+				height: 45px
+				position: fixed
+				z-index: 2
+				margin: 0
+				justify-content: space-around
+				top: 0
+				left: 0
+				flex-direction: column
+				transition: 0.5s all
+				margin-left: 0
+				background-color: rgba(236, 100, 75, 0.5)
+				li
+					margin: 0
+					a
+						font-size: 0
+				.hamburger
+					display: block
+					width: 20px
+					height: 12px
+					right: 10px
+					top: 17px
+					transform: translateY(-50%)
+					position: absolute
+					span
+						display: block
+						height: 2px
+						width: 100%
+						margin-top: 2px
+						background-color: #ffffff
+						transition: 0.5s all
+				.hamburger-active
+					span
+						margin-bottom: -4px
+						&:nth-child(1)
+							transform: translateY(3px) rotate(-45deg)
+						&:nth-child(2)
+							display: none
+						&:nth-child(3)
+							transform: translateY(3px) rotate(45deg)
+			.nav-active	
+				width: 50%
+				height: 116vh
+				li
+					a
+						font-size: 15px
+			.call_block		
+				    margin: 0 0 10px 65px
+		.overhead
+			margin-top: 40px
+		    font-size: 19px
+		.title
+			margin-top: 50px
+			line-height: 53px
+			font-size: 46px
+		.subtitle
+			font-size: 26px
+		.item-list
+			&_item-promo
+				h2
+    				font-size: 15px
+	.advantages
+		padding-bottom: 0
+		&_item
+			&_text
+				&_descr
+					 margin-bottom: 30px
+				.no_mb
+					margin-bottom: 30px
+	.divider
+		margin-top: 40px
+	.prices
+		&_item
+			width: 60%
+			margin: 20px auto
+		&_rectangle
+			height: 366px
+			.form
+				flex-wrap: wrap
+				top: 25%
+				input
+					margin-bottom: 15px
+					margin-left: 0
+					width: 254px
+	.scheme
+		&_list
+			&_item:nth-child(n+5)
+    			margin-bottom: 26px
+	.slider
+		&_block
+			&_item
+				&_feedback
+					width: 381px
+			&_slick-prev
+				right: 64%
+				top: 13%
+			&_slick-next
+				right: 32%
+				top: 13%
+	.questions
+	    padding: 62px 71px 46px 53px
+
+	footer
+		.top
+			flex-wrap: wrap
+		.call_block_footer
+			margin: 10px 0 0 38%
+		.bottom
+			justify-content: space-around
+			a
+				margin: 0
+			&_text
+				margin: 0
+
+@media (max-width:575px)
+	.button
+		width: 118px
+		font-size: 11px
+		&_order
+			width: 200px
+		&_details
+			width: 154px
+		&_submit
+			width: 147px
+		&_send
+			top: 400px
+			width: 180px
+
+	header
+		nav
+			flex-wrap: wrap-reverse
+			.call_block
+				margin: 0 auto 10px auto
+			.logo
+				margin: 20px auto 0 auto
+		.overhead
+			margin-top: 15px
+			font-size: 18px
+		.title
+			margin-top: 51px
+			line-height: 41px
+			font-size: 30px
+		.subtitle
+			font-size: 17px
+			line-height: 30px
+	.advantages
+		&_title
+			font-size: 20px
+		&_item
+			&_text
+				&_title
+					line-height: 18px
+	.about
+		padding-bottom: 20px
+		&_title
+			font-size: 20px
+		&_subtitle
+			font-size: 16px
+		&_item
+			margin: 0 auto
+			width: 100%
+			img
+				width: 100%
+		&_row
+			margin-top: 30px
+	.agent
+		&_subtitle
+			font-size: 14px
+	.prices
+		padding-top: 25px
+		&_title
+			font-size: 20px
+		&_subtitle
+			font-size: 16px
+		.divider
+			margin-top: 20px
+		&_item
+			width: 274px
+			&:hover
+				transform: none
+            	box-shadow: none
+				z-index: 0
+            	transition: none
+		&_footer
+			margin-top: 0
+			line-height: 40px
+	.managers
+		&_subtitle
+			font-size: 14px
+	.slider
+		padding: 26px 0 32px 0
+		&_title
+			font-size: 20px
+		&_subtitle
+			font-size: 16px
+		&_block
+			&_item
+				&_feedback
+					width: 274px
+			&_slick-next
+				right: 14%
+				top: 11%
+			&_slick-prev
+				right: 77%
+    			top: 11%
+	.questions
+		padding: 0
+		&_main
+			min-height: 470px
+
+		.form_questions
+			width: calc(100% - 60px)
+		form
+			input
+				width: 100%
+				margin-left: 0
+			textarea
+				height: 115px
+	footer
+		.top
+			justify-content: center
+			h2
+				text-align: center
+				margin: 10px auto 0 auto
+		.call_block_footer
+			margin: 10px 0 0 0
+			// h2
+			// 	margin-top: 0
+			button
+				margin-top: 25px
+		.bottom
+			flex-direction: column
+			a
+				margin-top: 5px
+			&_text
+				margin-top: 5px
+				img
+					margin-top: 5px

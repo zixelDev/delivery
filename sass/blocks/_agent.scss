@@ -2,6 +2,7 @@
     min-height:342px;
     background: url('../images/agent_bg.jpg') center (center/cover) no-repeat;
     padding: 58px 0 75px 0;
+    
 
     &_round {
         margin: 0 auto;
@@ -21,6 +22,7 @@
         font-weight: 700;
         line-height: 23px;
         text-align: center;
+        // animation: fadeInUp 1.5s;
     }
     &_subtitle {
         color: #ffffff;
