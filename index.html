@@ -16,14 +16,21 @@
             <div class="container">
                 <nav>
                     <a href="#" class="logo"><img src="icons/logo.png" alt="logo"></a>
+
                     <ul>
-                        <li><a href="#">Преимущества</a></li>
-                        <li><a href="#">Наша работа</a></li>
-                        <li><a href="#">Цены</a></li>
-                        <li><a href="#">Схема работы</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <li><a href="#advantages">Преимущества</a></li>
+                        <li><a href="#about">Наша работа</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#scheme">Схема работы</a></li>
+                        <li><a href="#slider">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
                     </ul>
+
                     <div class="call_block">
                         <div class="phone">
                             <h2>Есть вопросы?</h2>
@@ -75,9 +82,9 @@
                 <button class="button button_order">Получить расчет</button>
             </div>
         </header>
-        <section class="advantages">
+        <section class="advantages" id='advantages'>
             <div class="container">
-                <h2 class="advantages_title">Преимущества работы с GlobalOpt</h2>
+                <h2 class="advantages_title">Преимущества работы с Global Opt</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="advantages_item">
@@ -173,7 +180,7 @@
                         </div>
 
         </section>
-        <section class="about">
+        <section class="about" id='about'>
             <div class="container">
                 <h2 class="about_title">Наша работа - больше чем просто доставка</h2>
                 <div class="divider"></div>
@@ -183,114 +190,154 @@
                     и ваших требований по срокам и бюджету.</h2>
 
                 <div class="row">
-                    <col-md-4>
-                        <div class="about_item">
-                            <img src="images/insurance.jpg" alt="insurance">
-                            <h2 class="about_item_title">Страховка груза</h2>
-                            <h2 class="about_item_descr">Все грузы, логистику которых осуществляет Global Opt,
-                                застрахованы. Мы гарантируем
-                                полное возмещение стоимости груза в случаях, предусмотренных страхо- вым
-                                соглашением.
-                                Все ваши тревоги наша компания берет на себя.</h2>
-                        </div>
-                    </col-md-4>
-                    <col-md-4>
-                        <div class="about_item">
-                            <img src="images/logistic_ship.png" alt="logistic_ship">
-                            <h2 class="about_item_title">Логистика последней мили</h2>
-                            <h2 class="about_item_descr">Мы осуществляем доставку вашего груза до конкретного адреса.
-                                Привоз согласовывается
-                                менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы
-                                предоставляем услуги грузчи- ков по месту доставки груза.</h2>
-                        </div>
-                    </col-md-4>
-                    <col-md-4>
-                        <div class="about_item no_mr">
-                            <img src="images/looking_forward.jpg" alt="looking_forward">
-                            <h2 class="about_item_title">Мы всегда смотрим вперед</h2>
-                            <h2 class="about_item_descr">Философия нашей компании, делать себя и своих партнеров по
-                                всему миру, успешными и
-                                богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях.</h2>
-                        </div>
-                    </col-md-4>
+
+                    <div class="about_item">
+                        <img src="images/insurance.jpg" alt="insurance">
+                        <h2 class="about_item_title">Страховка груза</h2>
+                        <h2 class="about_item_descr">Все грузы, логистику которых осуществляет Global Opt,
+                            застрахованы. Мы гарантируем
+                            полное возмещение стоимости груза в случаях, предусмотренных страхо- вым
+                            соглашением.
+                            Все ваши тревоги наша компания берет на себя.</h2>
+                    </div>
+
+                    <div class="about_item">
+                        <img src="images/logistic_ship.png" alt="logistic_ship">
+                        <h2 class="about_item_title">Логистика последней мили</h2>
+                        <h2 class="about_item_descr">Мы осуществляем доставку вашего груза до конкретного адреса.
+                            Привоз согласовывается
+                            менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы
+                            предоставляем услуги грузчи- ков по месту доставки груза.</h2>
+                    </div>
+
+                    <div class="about_item no_mr">
+                        <img src="images/looking_forward.jpg" alt="looking_forward">
+                        <h2 class="about_item_title">Мы всегда смотрим вперед</h2>
+                        <h2 class="about_item_descr">Философия нашей компании, делать себя и своих партнеров по
+                            всему миру, успешными и
+                            богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях.</h2>
+                    </div>
+
                 </div>
 
             </div>
         </section>
         <section class="agent">
-            <div class="container">
-                <div class="agent_round"><img src="icons/agent.png" alt="agent"></div>
-                <h2 class="agent_title">Агент в Китае</h2>
-                <h2 class="agent_subtitle">Русскоговорящие представители компании без труда найдут именно тот товар,
-                    который будет отвечать Вашим <br> запросам как по качеству, так и по цене.</h2>
+            <div class="container fadeInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s"">
+                <div class=" agent_round"><img src="icons/agent.png" alt="agent"></div>
+            <h2 class="agent_title">Агент в Китае</h2>
+            <h2 class="agent_subtitle">Русскоговорящие представители компании без труда найдут именно тот товар,
+                который будет отвечать Вашим <br> запросам как по качеству, так и по цене.</h2>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id='prices'>
             <div class="container">
                 <h2 class="prices_title">Цены на любой вариант доставки</h2>
                 <div class="divider"></div>
                 <h2 class="prices_subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений.
                     Любой груз доставим вовремя.</h2>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-5">
                         <div class="prices_item">
                             <div class="prices_item_title">
                                 <h2>Доставка морем</h2>
                             </div>
-                            <div class="prices_item_content">
-                                <img src="icons/ship.png" alt="ship">
-                                <h2 class="prices_item_content_time">Доставка 35-50 дней</h2>
-                                <h2 class="prices_item_content_weight">от 0,3$ за 1 кг</h2>
-                                <h2 class="prices_item_content_descr">Морские перевозки грузов из Китая в Россию за 35
-                                    дней
-                                    с прохождением таможни </h2>
-                                <button class="button button_details">ПОДРОБНЕЕ</button>
+                            <div class="prices_item_block">
+                                <div class="prices_item_block_content active-content">
+                                    <img src="icons/ship.png" alt="ship">
+                                    <h2 class="prices_item_block_content_time">Доставка 35-50 дней</h2>
+                                    <h2 class="prices_item_block_content_weight">от 0,3$ за 1 кг</h2>
+                                    <h2 class="prices_item_block_content_descr">Морские перевозки грузов из Китая в
+                                        Россию за
+                                        35
+                                        дней
+                                        с прохождением таможни </h2>
+
+                                </div>
+                                <div class="prices_item_block_details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad odio dignissimos
+                                        laborum facilis, architecto tempore libero, recusandae nihil non rerum.
+                                        Voluptatem cupiditate recusandae facere voluptate aliquid a molestias mollitia!
+                                    </p>
+                                </div>
                             </div>
+                            <button class="button button_details">ПОДРОБНЕЕ</button>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-5">
                         <div class="prices_item">
                             <div class="prices_item_title">
                                 <h2>Ж/Д доставка</h2>
                             </div>
-                            <div class="prices_item_content">
-                                <img src="icons/train.png" alt="train">
-                                <h2 class="prices_item_content_time">Доставка 15-28 дней</h2>
-                                <h2 class="prices_item_content_weight">от 1$ за 1 кг</h2>
-                                <h2 class="prices_item_content_descr">ЖД перевозки грузов из Китая в Россию от 2 недель
-                                    с прохождением таможни</h2>
-                                <button class="button button_details">ПОДРОБНЕЕ</button>
+                            <div class="prices_item_block">
+                                <div class="prices_item_block_content active-content">
+                                    <img src="icons/train.png" alt="train">
+                                    <h2 class="prices_item_block_content_time">Доставка 15-28 дней</h2>
+                                    <h2 class="prices_item_block_content_weight">от 1$ за 1 кг</h2>
+                                    <h2 class="prices_item_block_content_descr">ЖД перевозки грузов из Китая в Россию от
+                                        2
+                                        недель
+                                        с прохождением таможни</h2>
+
+                                </div>
+                                <div class="prices_item_block_details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad odio dignissimos
+                                        laborum facilis, architecto tempore libero, recusandae nihil non rerum.
+                                        Voluptatem cupiditate recusandae facere voluptate aliquid a molestias mollitia!
+                                    </p>
+                                </div>
                             </div>
+                            <button class="button button_details">ПОДРОБНЕЕ</button>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-5">
                         <div class="prices_item">
                             <div class="prices_item_title">
                                 <h2>Автодоставка</h2>
                             </div>
-                            <div class="prices_item_content">
-                                <img src="icons/truck.png" alt="truck">
-                                <h2 class="prices_item_content_time">Доставка 12-20 дня</h2>
-                                <h2 class="prices_item_content_weight">от 1$ за 1 кг</h2>
-                                <h2 class="prices_item_content_descr">Автоперевозки грузов из Китая в Россию от 2 недель
-                                    с прохождением таможни</h2>
-                                <button class="button button_details">ПОДРОБНЕЕ</button>
+                            <div class="prices_item_block">
+                                <div class="prices_item_block_content active-content">
+                                    <img src="icons/truck.png" alt="truck">
+                                    <h2 class="prices_item_block_content_time">Доставка 12-20 дня</h2>
+                                    <h2 class="prices_item_block_content_weight">от 1$ за 1 кг</h2>
+                                    <h2 class="prices_item_block_content_descr">Автоперевозки грузов из Китая в Россию
+                                        от 2
+                                        недель
+                                        с прохождением таможни</h2>
+                                </div>
+                                <div class="prices_item_block_details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad odio dignissimos
+                                        laborum facilis, architecto tempore libero, recusandae nihil non rerum.
+                                        Voluptatem cupiditate recusandae facere voluptate aliquid a molestias mollitia!
+                                    </p>
+                                </div>
                             </div>
+                            <button class="button button_details">ПОДРОБНЕЕ</button>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-5">
                         <div class="prices_item">
                             <div class="prices_item_title">
                                 <h2>Авиа доставка</h2>
                             </div>
-                            <div class="prices_item_content">
-                                <img src="icons/orange_aircraft.png" alt="orange_aircraft">
-                                <h2 class="prices_item_content_time">Доставка 1-12 дней</h2>
-                                <h2 class="prices_item_content_weight">от 6$ за 1 кг</h2>
-                                <h2 class="prices_item_content_descr">Авиаперевозки грузов из Китая в Россию до 2 недель
-                                    с прохождением таможни</h2>
-                                <button class="button button_details">ПОДРОБНЕЕ</button>
+                            <div class="prices_item_block">
+                                <div class="prices_item_block_content active-content">
+                                    <img src="icons/orange_aircraft.png" alt="orange_aircraft">
+                                    <h2 class="prices_item_block_content_time">Доставка 1-12 дней</h2>
+                                    <h2 class="prices_item_block_content_weight">от 6$ за 1 кг</h2>
+                                    <h2 class="prices_item_block_content_descr">Авиаперевозки грузов из Китая в Россию
+                                        до 2
+                                        недель
+                                        с прохождением таможни</h2>
+                                </div>
+                                <div class="prices_item_block_details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad odio dignissimos
+                                        laborum facilis, architecto tempore libero, recusandae nihil non rerum.
+                                        Voluptatem cupiditate recusandae facere voluptate aliquid a molestias mollitia!
+                                    </p>
+                                </div>
                             </div>
+                            <button class="button button_details">ПОДРОБНЕЕ</button>
                         </div>
                     </div>
                 </div>
@@ -306,8 +353,8 @@
                 </div>
             </div>
         </section>
-        <section class="managers">
-            <div class="container">
+        <section class="managers ">
+            <div class="container fadeInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s">
                 <div class="managers_round"><img src="icons/managers_of_companies.png" alt="managers_of_companies">
                 </div>
                 <h2 class="managers_title">Менеджеры компании</h2>
@@ -316,7 +363,7 @@
                     поставки от завода-изготовителя.</h2>
             </div>
         </section>
-        <section class="scheme">
+        <section class="scheme" id='scheme'>
             <div class="container">
                 <h2 class="scheme_title">Схема работы с нами</h2>
                 <div class="scheme_list">
@@ -361,13 +408,13 @@
                 </div>
             </div>
         </section>
-        <section class="slider">
+        <section class="slider" id='slider'>
             <div class="container">
                 <h2 class="slider_title">отзывы наших клиентов</h2>
                 <div class="divider"></div>
                 <h2 class="slider_subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</h2>
                 <div class="slider_block">
-                    <div class="slider_block_item">
+                    <div class="slider_block_item fog">
                         <img src="images/anisimova.png" alt="anisimova">
                         <h2 class="slider_block_item_name">Анисимова Ольга</h2>
                         <h2 class="slider_block_item_feedback">Хочу рассказать о компании Global Opt. Самое главное что
@@ -375,14 +422,14 @@
                             много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду
                             продолжать пользтваьбся услугами даной компании</h2>
                     </div>
-                    <div class="slider_block_item">
+                    <div class="slider_block_item fog ">
                         <img src="images/smirnov.png" alt="smirnov">
                         <h2 class="slider_block_item_name">Смирнов Сергей</h2>
                         <h2 class="slider_block_item_feedback"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellendus quis quia, soluta eveniet corrupti consequatur quos sunt distinctio ducimus
                             assumenda quaerat praesentium maiores nihil aperiam, fuga ratione harum velit modi? </h2>
                     </div>
-                    <div class="slider_block_item">
+                    <div class="slider_block_item fog">
                         <img src="images/petrova.png" alt="petrova">
                         <h2 class="slider_block_item_name">Петрова Анна</h2>
                         <h2 class="slider_block_item_feedback">Facilis, consectetur sint. Similique labore distinctio
@@ -390,6 +437,8 @@
                             molestiae. Nostrum ad consequuntur placeat consequatur magnam at excepturi, aliquid
                             aspernatur doloremque.</h2>
                     </div>
+                    <button class="slider_block_slick-prev"> <img src="icons/left_arrow.svg" alt="left_arrow"></button>
+                    <button class="slider_block_slick-next"> <img src="icons/right_arrow.svg" alt="next_arrow"></button>
                 </div>
             </div>
 
@@ -401,29 +450,30 @@
                         <h2 class="questions_main_top_title">Остались вопросы?</h2>
                         <h2 class="questions_main_top_subtitle">Напишите нам!</h2>
                     </div>
-                        <form action="#" class="form form_question">
-                            <input type="text" placeholder="Ваше имя..." name="name">
-                            <input placeholder="Ваш телефон..." name="number">
-                            <input type="email" placeholder="Ваша почта..." name="email">
-                            <div class="line-break"></div>
-                            <textarea name="question" id="question" cols="30" rows="10" placeholder="Сообщение..."></textarea>
-                        </form>
+                    <form action="#" class="form form_question">
+                        <input type="text" placeholder="Ваше имя..." name="name">
+                        <input placeholder="Ваш телефон..." name="number">
+                        <input type="email" placeholder="Ваша почта..." name="email">
+                        <div class="line-break"></div>
+                        <textarea name="question" id="question" cols="30" rows="10"
+                            placeholder="Сообщение..."></textarea>
+                    </form>
                     <button class="button button_send">Отправить заявку</button>
                 </div>
             </div>
         </section>
         <section class="map">
             <div class="map_content" id="map"></div>
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.606545524071!2d37.62502931582823!3d55.747964980551984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1566600326910!5m2!1sru!2sru" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" ></iframe> -->
-                <!-- <img src="icons/Rectangle_14.svg" alt="Rectangle_14" class= 'map_information'> -->
-                <!-- <h2>г. Москва</h2>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.606545524071!2d37.62502931582823!3d55.747964980551984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1566600326910!5m2!1sru!2sru" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" ></iframe> -->
+            <!-- <img src="icons/Rectangle_14.svg" alt="Rectangle_14" class= 'map_information'> -->
+            <!-- <h2>г. Москва</h2>
                 <h2>ул. Садовническая, дом 5, офис 4-6
                     700 от м. Новокузнецкая
                     Тел: +7 (926) 423 01 00</h2>
                 <a href=""></a> -->
-        
-            </section>
-        <footer>
+
+        </section>
+        <footer id='contact'>
             <div class="container">
                 <div class="top">
                     <img src="icons/logo.png" alt="logo">
@@ -445,10 +495,13 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZlsOrOknSZS4ciC0LcCQxXU7q7C6CgmA&callback=initMap" ></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZlsOrOknSZS4ciC0LcCQxXU7q7C6CgmA&callback=initMap">
+        </script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 

@@ -10,6 +10,9 @@
     border-radius: 22px;
     cursor: pointer;
     border: none;
+    &:hover {
+        box-shadow:  0 0 7px rgba(245, 114, 6, 2.07);
+    }
 
     &_order {
         display: block;
@@ -22,7 +25,8 @@
     }
 
     &_details {
-        margin-top: 25px;
+        // margin-top: 25px;
+        margin-left: 19%;
     }
 
     &_submit {
