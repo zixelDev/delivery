@@ -98,6 +98,10 @@
 		.form
 			input
 				width: 214px
+	.scheme
+		&_list
+			&_item:last-child
+				margin-top: 30px
 	.questions
 		&_main
 			min-height: 406px
@@ -214,7 +218,10 @@
 	.scheme
 		&_list
 			&_item:nth-child(n+5)
-    			margin-bottom: 26px
+				margin-bottom: 26px
+			&_item:last-child
+				margin-top: 0
+			
 	.slider
 		&_block
 			&_item
@@ -306,10 +313,11 @@
 		&_item
 			width: 274px
 			&:hover
-				transform: none
-            	box-shadow: none
+				transform: rotate(0deg) scale(1.0, 1.0)
+				box-shadow: none
 				z-index: 0
             	transition: none
+
 		&_footer
 			margin-top: 0
 			line-height: 40px
